@@ -1,1 +1,15 @@
 
+[
+  {
+    "label": "💬 Chat",
+    "src": "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+  },
+  {
+    "label": "🌐 Translate",
+    "src": "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+  },
+  {
+    "label": "⏰ Timer",
+    "src": "https://raw.githubusercontent.com/youruser/repo/main/timer-widget.js"
+  }
+]
