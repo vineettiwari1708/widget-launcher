@@ -1,4 +1,3 @@
-
 (function () {
   document.addEventListener("DOMContentLoaded", async function () {
     const launcherScript = document.querySelector(".widget-launcher");
@@ -25,10 +24,38 @@
 
     // Create container
     const container = document.createElement("div");
+
+    let top = "auto", bottom = "auto", left = "auto", right = "auto", transform = "";
+
+    if (position === "center-right") {
+      top = "50%";
+      right = "20px";
+      transform = "translateY(-50%)";
+    } else if (position === "center-left") {
+      top = "50%";
+      left = "20px";
+      transform = "translateY(-50%)";
+    } else if (position === "bottom-right") {
+      bottom = "20px";
+      right = "20px";
+    } else if (position === "bottom-left") {
+      bottom = "20px";
+      left = "20px";
+    } else if (position === "top-right") {
+      top = "20px";
+      right = "20px";
+    } else if (position === "top-left") {
+      top = "20px";
+      left = "20px";
+    }
+
     container.style.cssText = `
       position: fixed;
-      ${position.includes("bottom") ? "bottom: 20px;" : "top: 20px;"}
-      ${position.includes("right") ? "right: 20px;" : "left: 20px;"}
+      top: ${top};
+      bottom: ${bottom};
+      left: ${left};
+      right: ${right};
+      transform: ${transform};
       z-index: 99999;
       display: flex;
       flex-direction: column;
@@ -63,7 +90,7 @@
 
     widgetList.forEach(widget => {
       const btn = document.createElement("button");
-      btn.innerText = widget.label || "⚙️ Widget";
+      btn.textContent = widget.label || "⚙️ Widget";
       btn.title = widget.label;
       btn.style.cssText = `
         padding: 6px 10px;
