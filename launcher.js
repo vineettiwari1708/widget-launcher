@@ -231,6 +231,12 @@
   label: "⚡", // Wire Cutter = lightning emoji
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/wire-cutter-widget.js"
 }
+     ,
+     {
+  label: "🔢", // Quick Count = numbers emoji
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-count-widget.js"
+}
+
 
 
 
