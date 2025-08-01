@@ -206,6 +206,12 @@
   label: "♟️", // Quick Chess Puzzle = chess pawn
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-chess-puzzle-widget.js"
 }
+     ,
+     {
+  label: "🚧", // Box Evade = construction barrier
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/box-evade-widget.js"
+}
+
 
 
 
