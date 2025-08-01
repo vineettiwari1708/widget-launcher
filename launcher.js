@@ -158,6 +158,11 @@
   label: "🥁", // Tap Pattern - drum emoji fits the rhythm/tap idea
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tap-pattern-widget.js"
 }
+     ,
+     {
+  label: "🚶", // Path Finder – compass represents navigation
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/path-finder-widget.js"
+}
 
 ];
 
