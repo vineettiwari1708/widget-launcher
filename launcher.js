@@ -794,6 +794,295 @@
 // })();
 
 
+// (function () {
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const launcherScript = document.querySelector(".widget-launcher");
+//     const position = launcherScript.getAttribute("data-position") || "bottom-right";
+
+//     const widgetList = [
+//       {
+//         label: "❌",
+//         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tic-tac-toe-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },{
+//         label: "💬",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },{
+//         label: "💬",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       }, {
+//         label: "💬",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },{
+//         label: "💬",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },{
+//         label: "💬",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       }
+//     ];
+
+//     const state = { isOpen: false };
+
+//     // Position container dynamically
+//     const container = document.createElement("div");
+
+//     let positionStyles = "";
+//     switch (position) {
+//       case "bottom-right":
+//         positionStyles = "bottom: 20px; right: 20px;";
+//         break;
+//       case "bottom-left":
+//         positionStyles = "bottom: 20px; left: 20px;";
+//         break;
+//       case "top-right":
+//         positionStyles = "top: 20px; right: 20px;";
+//         break;
+//       case "top-left":
+//         positionStyles = "top: 20px; left: 20px;";
+//         break;
+//       case "center-right":
+//         positionStyles = "top: 50%; right: 20px; transform: translateY(-50%);";
+//         break;
+//       case "center-left":
+//         positionStyles = "top: 50%; left: 20px; transform: translateY(-50%);";
+//         break;
+//       default:
+//         positionStyles = "bottom: 20px; right: 20px;";
+//     }
+
+//     container.style.cssText = `
+//       position: fixed;
+//       z-index: 99999;
+//       ${positionStyles}
+//     `;
+
+//     // Toggle button
+//     const toggleBtn = document.createElement("button");
+//     toggleBtn.innerText = "🧰";
+//     toggleBtn.title = "Open Widgets";
+//     toggleBtn.setAttribute("aria-expanded", "false");
+//     toggleBtn.setAttribute("aria-label", "Toggle widget menu");
+//     toggleBtn.style.cssText = `
+//       width: 48px;
+//       height: 48px;
+//       background: #007bff;
+//       color: white;
+//       border-radius: 50%;
+//       border: none;
+//       cursor: pointer;
+//       font-size: 24px;
+//       position: relative;
+//       z-index: 1;
+//     `;
+
+//     container.appendChild(toggleBtn);
+
+//     // Widget panel (now responsive and auto-sized)
+//     const widgetBar = document.createElement("div");
+//     widgetBar.classList.add("widget-box");
+//     widgetBar.style.cssText = `
+//       display: none;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       align-items: center;
+//       gap: 16px;
+//       max-width: 400px;
+//       max-height: 400px;
+//       background: rgba(255, 255, 255, 0.3);
+//       border: 1px solid rgba(255, 255, 255, 0.4);
+//       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+//       border-radius: 16px;
+//       padding: 5px;
+//       position: absolute;
+//       right: 60px;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       opacity: 0;
+//       transition: opacity 0.3s ease;
+//       backdrop-filter: blur(8px);
+//       overflow-y: auto;
+//       box-sizing: border-box;
+//       z-index: 0;
+//       width: 400px;
+//     `;
+
+//     // Responsive style
+//     const responsiveStyle = document.createElement("style");
+//     responsiveStyle.textContent = `
+//       @media (max-width: 500px) {
+//         .widget-box {
+//           max-width: 90vw !important;
+//           max-height: 90vh !important;
+//           right: 60px !important;
+//         }
+//       }
+//     `;
+//     document.head.appendChild(responsiveStyle);
+
+//     // Track loaded widgets
+//     const loadedWidgets = new Set();
+
+//     // Create sub-widget buttons (circular)
+//     widgetList.forEach(widget => {
+//       const btn = document.createElement("button");
+//       btn.textContent = widget.label || "⚙️";
+//       btn.title = widget.label;
+//       btn.style.cssText = `
+//         width: 56px;
+//         height: 56px;
+//         background: #007bff;
+//         color: white;
+//         border-radius: 50%;
+//         border: none;
+//         cursor: pointer;
+//         font-size: 24px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         transition: background 0.3s;
+//       `;
+//       btn.onmouseover = () => btn.style.background = "#0056b3";
+//       btn.onmouseout = () => btn.style.background = "#007bff";
+
+//       btn.onclick = async () => {
+//         if (loadedWidgets.has(widget.src)) return;
+//         btn.disabled = true;
+//         btn.innerText = "⏳";
+//         try {
+//           const scriptText = await fetch(widget.src).then(r => r.text());
+//           const script = document.createElement("script");
+//           script.type = "module";
+//           script.textContent = scriptText;
+//           document.body.appendChild(script);
+//           loadedWidgets.add(widget.src);
+//           btn.innerText = widget.label;
+//         } catch (e) {
+//           console.error("Widget load error:", e);
+//           btn.innerText = "❌";
+//         } finally {
+//           btn.disabled = false;
+//         }
+//       };
+
+//       widgetBar.appendChild(btn);
+//     });
+
+//     container.appendChild(widgetBar);
+//     document.body.appendChild(container);
+
+//     // Toggle widget panel
+//     toggleBtn.addEventListener("click", () => {
+//       state.isOpen = !state.isOpen;
+//       toggleBtn.setAttribute("aria-expanded", state.isOpen);
+//       if (state.isOpen) {
+//         widgetBar.style.display = "flex";
+//         requestAnimationFrame(() => widgetBar.style.opacity = "1");
+//       } else {
+//         widgetBar.style.opacity = "0";
+//         setTimeout(() => widgetBar.style.display = "none", 300);
+//       }
+//     });
+//   });
+// })();
+
+
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
     const launcherScript = document.querySelector(".widget-launcher");
@@ -805,111 +1094,8 @@
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tic-tac-toe-widget.js"
       },
       {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },{
         label: "💬",
         src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },{
-        label: "💬",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      }, {
-        label: "💬",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },{
-        label: "💬",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },{
-        label: "💬",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
-      },
-      {
-        label: "⏰",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
-      },
-      {
-        label: "🌐",
-        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
       },
       {
         label: "⏰",
@@ -918,32 +1104,18 @@
     ];
 
     const state = { isOpen: false };
-
-    // Position container dynamically
     const container = document.createElement("div");
 
+    // Positioning logic
     let positionStyles = "";
     switch (position) {
-      case "bottom-right":
-        positionStyles = "bottom: 20px; right: 20px;";
-        break;
-      case "bottom-left":
-        positionStyles = "bottom: 20px; left: 20px;";
-        break;
-      case "top-right":
-        positionStyles = "top: 20px; right: 20px;";
-        break;
-      case "top-left":
-        positionStyles = "top: 20px; left: 20px;";
-        break;
-      case "center-right":
-        positionStyles = "top: 50%; right: 20px; transform: translateY(-50%);";
-        break;
-      case "center-left":
-        positionStyles = "top: 50%; left: 20px; transform: translateY(-50%);";
-        break;
-      default:
-        positionStyles = "bottom: 20px; right: 20px;";
+      case "bottom-right": positionStyles = "bottom: 20px; right: 20px;"; break;
+      case "bottom-left": positionStyles = "bottom: 20px; left: 20px;"; break;
+      case "top-right": positionStyles = "top: 20px; right: 20px;"; break;
+      case "top-left": positionStyles = "top: 20px; left: 20px;"; break;
+      case "center-right": positionStyles = "top: 50%; right: 20px; transform: translateY(-50%);"; break;
+      case "center-left": positionStyles = "top: 50%; left: 20px; transform: translateY(-50%);"; break;
+      default: positionStyles = "bottom: 20px; right: 20px;";
     }
 
     container.style.cssText = `
@@ -952,7 +1124,7 @@
       ${positionStyles}
     `;
 
-    // Toggle button
+    // Toggle launcher button
     const toggleBtn = document.createElement("button");
     toggleBtn.innerText = "🧰";
     toggleBtn.title = "Open Widgets";
@@ -970,10 +1142,9 @@
       position: relative;
       z-index: 1;
     `;
-
     container.appendChild(toggleBtn);
 
-    // Widget panel (now responsive and auto-sized)
+    // Widget box
     const widgetBar = document.createElement("div");
     widgetBar.classList.add("widget-box");
     widgetBar.style.cssText = `
@@ -985,11 +1156,12 @@
       gap: 16px;
       max-width: 400px;
       max-height: 400px;
+      width: 100%;
       background: rgba(255, 255, 255, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.4);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       border-radius: 16px;
-      padding: 5px;
+      padding: 10px;
       position: absolute;
       right: 60px;
       top: 50%;
@@ -999,9 +1171,9 @@
       backdrop-filter: blur(8px);
       overflow-y: auto;
       box-sizing: border-box;
-      z-index: 0;
-      width: 400px;
     `;
+    container.appendChild(widgetBar);
+    document.body.appendChild(container);
 
     // Responsive style
     const responsiveStyle = document.createElement("style");
@@ -1016,56 +1188,88 @@
     `;
     document.head.appendChild(responsiveStyle);
 
-    // Track loaded widgets
     const loadedWidgets = new Set();
 
-    // Create sub-widget buttons (circular)
-    widgetList.forEach(widget => {
-      const btn = document.createElement("button");
-      btn.textContent = widget.label || "⚙️";
-      btn.title = widget.label;
-      btn.style.cssText = `
-        width: 56px;
-        height: 56px;
-        background: #007bff;
-        color: white;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background 0.3s;
-      `;
-      btn.onmouseover = () => btn.style.background = "#0056b3";
-      btn.onmouseout = () => btn.style.background = "#007bff";
+    function renderButtons() {
+      widgetBar.innerHTML = "";
 
-      btn.onclick = async () => {
-        if (loadedWidgets.has(widget.src)) return;
-        btn.disabled = true;
-        btn.innerText = "⏳";
-        try {
-          const scriptText = await fetch(widget.src).then(r => r.text());
-          const script = document.createElement("script");
-          script.type = "module";
-          script.textContent = scriptText;
-          document.body.appendChild(script);
-          loadedWidgets.add(widget.src);
-          btn.innerText = widget.label;
-        } catch (e) {
-          console.error("Widget load error:", e);
-          btn.innerText = "❌";
-        } finally {
-          btn.disabled = false;
-        }
-      };
+      widgetList.forEach(widget => {
+        const btn = document.createElement("button");
+        btn.textContent = widget.label || "⚙️";
+        btn.title = widget.label;
+        btn.style.cssText = `
+          width: 56px;
+          height: 56px;
+          background: #007bff;
+          color: white;
+          border-radius: 50%;
+          border: none;
+          cursor: pointer;
+          font-size: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background 0.3s;
+        `;
+        btn.onmouseover = () => btn.style.background = "#0056b3";
+        btn.onmouseout = () => btn.style.background = "#007bff";
 
-      widgetBar.appendChild(btn);
-    });
+        btn.onclick = async () => {
+          widgetBar.innerHTML = "";
+          const loading = document.createElement("div");
+          loading.textContent = "Loading...";
+          loading.style.cssText = "color: #333; font-size: 18px; margin-top: 20px;";
+          widgetBar.appendChild(loading);
 
-    container.appendChild(widgetBar);
-    document.body.appendChild(container);
+          try {
+            const scriptText = await fetch(widget.src).then(r => r.text());
+            widgetBar.innerHTML = "";
+
+            const widgetContainer = document.createElement("div");
+            widgetContainer.className = "widget-content";
+            widgetContainer.style.cssText = `
+              flex: 1;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+            `;
+
+            const script = document.createElement("script");
+            script.type = "module";
+            script.textContent = scriptText;
+            document.body.appendChild(script);
+
+            const closeBtn = document.createElement("button");
+            closeBtn.innerText = "❌ Close";
+            closeBtn.style.cssText = `
+              margin-top: 10px;
+              background: #dc3545;
+              color: white;
+              border: none;
+              border-radius: 6px;
+              padding: 8px 16px;
+              cursor: pointer;
+            `;
+            closeBtn.onclick = () => {
+              widgetBar.innerHTML = "";
+              renderButtons();
+            };
+
+            widgetBar.appendChild(widgetContainer);
+            widgetBar.appendChild(closeBtn);
+
+            loadedWidgets.add(widget.src);
+          } catch (e) {
+            widgetBar.innerHTML = "<div style='color:red;'>Failed to load widget</div>";
+            console.error("Widget load error:", e);
+          }
+        };
+
+        widgetBar.appendChild(btn);
+      });
+    }
+
+    renderButtons();
 
     // Toggle widget panel
     toggleBtn.addEventListener("click", () => {
@@ -1081,6 +1285,8 @@
     });
   });
 })();
+
+
 
 
 
