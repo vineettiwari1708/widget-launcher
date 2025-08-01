@@ -221,6 +221,17 @@
   label: "⬇️", // Elevator Drop = down arrow
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/elevator-drop-widget.js"
 }
+     ,
+     {
+  label: "🧱", // Stack the Blocks = brick emoji
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/stack-the-blocks-widget.js"
+}
+,
+     {
+  label: "⚡", // Wire Cutter = lightning emoji
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/wire-cutter-widget.js"
+}
+
 
 
 
