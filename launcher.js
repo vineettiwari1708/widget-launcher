@@ -216,6 +216,12 @@
   label: "⚡", // Wires & Circuits = lightning bolt
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/wires-circuits-widget.js"
 }
+     ,
+     {
+  label: "⬇️", // Elevator Drop = down arrow
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/elevator-drop-widget.js"
+}
+
 
 
 
