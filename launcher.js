@@ -447,6 +447,167 @@
 
 
 
+// (function () {
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const launcherScript = document.querySelector(".widget-launcher");
+//     const position = launcherScript.getAttribute("data-position") || "bottom-right";
+
+//     const widgetList = [
+//       {
+//         label: "💬",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+//       },
+//       {
+//         label: "🌐",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+//       },
+//       {
+//         label: "⏰",
+//         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+//       }
+//     ];
+
+//     const state = { isOpen: false };
+
+//     // Position launcher container
+//     const container = document.createElement("div");
+//     container.style.cssText = `
+//       position: fixed;
+//       bottom: 20px;
+//       right: 20px;
+//       z-index: 99999;
+//     `;
+
+//     // Toggle button
+//     const toggleBtn = document.createElement("button");
+//     toggleBtn.innerText = "🧰";
+//     toggleBtn.title = "Open Widgets";
+//     toggleBtn.setAttribute("aria-expanded", "false");
+//     toggleBtn.setAttribute("aria-label", "Toggle widget menu");
+//     toggleBtn.style.cssText = `
+//       width: 48px;
+//       height: 48px;
+//       background: #007bff;
+//       color: white;
+//       border-radius: 50%;
+//       border: none;
+//       cursor: pointer;
+//       font-size: 24px;
+//       position: relative;
+//       z-index: 1;
+//     `;
+
+//     container.appendChild(toggleBtn);
+
+//     // Widget panel (transparent box, vertically centered)
+//     const widgetBar = document.createElement("div");
+//     widgetBar.classList.add("widget-box");
+//     widgetBar.style.cssText = `
+//       display: none;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       gap: 16px;
+//       width: 400px;
+//       height: 400px;
+//       max-width: 90vw;
+//       max-height: 90vh;
+//       background: rgba(255, 255, 255, 0.3);
+//       border: 1px solid rgba(255, 255, 255, 0.4);
+//       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+//       border-radius: 16px;
+//       padding: 20px;
+//       position: absolute;
+//       right: 60px;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       opacity: 0;
+//       transition: opacity 0.3s ease;
+//       backdrop-filter: blur(8px);
+//       overflow-y: auto;
+//       box-sizing: border-box;
+//       z-index: 0;
+//     `;
+
+//     // Responsive style
+//     const responsiveStyle = document.createElement("style");
+//     responsiveStyle.textContent = `
+//       @media (max-width: 500px) {
+//         .widget-box {
+//           width: 90vw !important;
+//           height: 90vh !important;
+//           right: 60px !important;
+//         }
+//       }
+//     `;
+//     document.head.appendChild(responsiveStyle);
+
+//     // Track loaded widgets
+//     const loadedWidgets = new Set();
+
+//     // Create sub-widget buttons (circular)
+//     widgetList.forEach(widget => {
+//       const btn = document.createElement("button");
+//       btn.textContent = widget.label || "⚙️";
+//       btn.title = widget.label;
+//       btn.style.cssText = `
+//         width: 56px;
+//         height: 56px;
+//         background: #007bff;
+//         color: white;
+//         border-radius: 50%;
+//         border: none;
+//         cursor: pointer;
+//         font-size: 24px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         transition: background 0.3s;
+//       `;
+//       btn.onmouseover = () => btn.style.background = "#0056b3";
+//       btn.onmouseout = () => btn.style.background = "#007bff";
+
+//       btn.onclick = async () => {
+//         if (loadedWidgets.has(widget.src)) return;
+//         btn.disabled = true;
+//         btn.innerText = "⏳";
+//         try {
+//           const scriptText = await fetch(widget.src).then(r => r.text());
+//           const script = document.createElement("script");
+//           script.type = "module";
+//           script.textContent = scriptText;
+//           document.body.appendChild(script);
+//           loadedWidgets.add(widget.src);
+//           btn.innerText = widget.label;
+//         } catch (e) {
+//           console.error("Widget load error:", e);
+//           btn.innerText = "❌";
+//         } finally {
+//           btn.disabled = false;
+//         }
+//       };
+
+//       widgetBar.appendChild(btn);
+//     });
+
+//     container.appendChild(widgetBar);
+//     document.body.appendChild(container);
+
+//     // Toggle widget panel
+//     toggleBtn.addEventListener("click", () => {
+//       state.isOpen = !state.isOpen;
+//       toggleBtn.setAttribute("aria-expanded", state.isOpen);
+//       if (state.isOpen) {
+//         widgetBar.style.display = "flex";
+//         requestAnimationFrame(() => widgetBar.style.opacity = "1");
+//       } else {
+//         widgetBar.style.opacity = "0";
+//         setTimeout(() => widgetBar.style.display = "none", 300);
+//       }
+//     });
+//   });
+// })();
+
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
     const launcherScript = document.querySelector(".widget-launcher");
@@ -469,13 +630,37 @@
 
     const state = { isOpen: false };
 
-    // Position launcher container
+    // Position launcher container dynamically
     const container = document.createElement("div");
+
+    let positionStyles = "";
+    switch (position) {
+      case "bottom-right":
+        positionStyles = "bottom: 20px; right: 20px;";
+        break;
+      case "bottom-left":
+        positionStyles = "bottom: 20px; left: 20px;";
+        break;
+      case "top-right":
+        positionStyles = "top: 20px; right: 20px;";
+        break;
+      case "top-left":
+        positionStyles = "top: 20px; left: 20px;";
+        break;
+      case "center-right":
+        positionStyles = "top: 50%; right: 20px; transform: translateY(-50%);";
+        break;
+      case "center-left":
+        positionStyles = "top: 50%; left: 20px; transform: translateY(-50%);";
+        break;
+      default:
+        positionStyles = "bottom: 20px; right: 20px;";
+    }
+
     container.style.cssText = `
       position: fixed;
-      bottom: 20px;
-      right: 20px;
       z-index: 99999;
+      ${positionStyles}
     `;
 
     // Toggle button
@@ -607,6 +792,7 @@
     });
   });
 })();
+
 
 
 
