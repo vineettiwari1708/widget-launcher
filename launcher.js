@@ -89,8 +89,8 @@
       }
       ,
       {
-        label: "🏓",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/pong-mini-widget.js"
+        label: "🎯",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/click-target-widget.js"
       }
       ,
       {
