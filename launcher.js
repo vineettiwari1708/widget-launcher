@@ -115,7 +115,7 @@
       ,
       {
         label: "📝",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/typing-speed-test-widget.js"
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/random-emoji-picker.js"
       }
        ,
       {
