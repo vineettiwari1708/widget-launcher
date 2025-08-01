@@ -69,8 +69,8 @@
       }
        ,
       {
-        label: "✊✋✌️",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/rock-paper-scissors-widget.js"
+        label: "🔤",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/word-scramble-widget.js"
       }
       ,
       {
