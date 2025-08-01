@@ -57,6 +57,51 @@
         label: "🐹",
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/whack-a-mole-widget.js"
       }
+       ,
+      {
+        label: "🎨",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/color-guessing-widget.js"
+      }
+       ,
+      {
+        label: "",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/minesweeper-widget.js"
+      }
+       ,
+      {
+        label: "✊✋✌️",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/rock-paper-scissors-widget.js"
+      }
+      ,
+      {
+        label: "🎵",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/simon-says-widget.js"
+      }
+      ,
+      {
+        label: "🧩",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/sliding-puzzle-widget.js"
+      }
+      ,
+      {
+        label: "🔵",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/dots-and-boxes-widget.js"
+      }
+      ,
+      {
+        label: "🏓",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/pong-mini-widget.js"
+      }
+      ,
+      {
+        label: "🐹",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/whack-a-mole-widget.js"
+      }
+       ,
+      {
+        label: "🎨",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/color-guessing-widget.js"
+      }
     ];
 
     const state = { isOpen: false };
