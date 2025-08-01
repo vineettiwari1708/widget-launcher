@@ -211,6 +211,11 @@
   label: "🚧", // Box Evade = construction barrier
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/box-evade-widget.js"
 }
+,
+     {
+  label: "⚡", // Wires & Circuits = lightning bolt
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/wires-circuits-widget.js"
+}
 
 
 
