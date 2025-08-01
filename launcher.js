@@ -1307,6 +1307,11 @@
         label: "🐍",
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-matching.js"
       }
+       ,
+      {
+        label: "2048",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-matching.js"
+      }
     ];
 
     const state = { isOpen: false };
