@@ -143,7 +143,8 @@
       opacity: 0; transition: opacity 0.3s ease;
       backdrop-filter: blur(8px);
       overflow-y: auto; box-sizing: border-box;
-      width: fit-content; z-index: 0;
+      
+      z-index: 0;
     `;
     container.appendChild(widgetBar);
 
