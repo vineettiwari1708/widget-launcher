@@ -133,6 +133,11 @@
     label: "🧪", // Quick Tap
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/reaction-chain-widget.js"
   }
+     ,
+  {
+    label: "🕹️", // Quick Tap
+    src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/platform-jumper-widget.js"
+  }
 ];
 
 
