@@ -125,6 +125,11 @@
     label: "⚖️", // Emoji Memory Match = compass
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/balance-game-widget.js"
   }
+    ,
+  {
+    label: "✏️", // Emoji Memory Match = compass
+    src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/one-line-drawing-widget.js"
+  }
 ];
 
     const state = { isOpen: false };
