@@ -1,0 +1,1022 @@
+🔍 Types of Small Widget Apps You Can Create Like This:
+
+1. 🗺️ Map Locator Widget
+
+Like your current example:
+
+Displays a Google Map centered on a location.
+
+Can show office locations, event venues, or store finders.
+
+Ideal for local business websites.
+
+2. 📞 Contact or Support Widget
+
+Floating widget with live chat or contact form (e.g., Intercom-style).
+
+Shows phone number, WhatsApp, or Messenger buttons.
+
+3. 📅 Booking or Appointment Widget
+
+Allows users to book meetings or appointments.
+
+Can integrate Calendly, Google Calendar, or a custom form.
+
+4. 🌐 Language Switcher Widget
+
+Lets users switch languages.
+
+Useful on multilingual websites.
+
+5. 💬 Feedback or Survey Widget
+
+Simple popup form for gathering user feedback or ratings.
+
+Can be connected to Google Forms, Typeform, or custom backend.
+
+6. 📦 Product Promo Widget
+
+Promotes a product or a flash sale.
+
+Could include a countdown timer and CTA button.
+
+7. 🔐 Login or Account Access Widget
+
+Provides quick login or registration functionality.
+
+Works well on SaaS dashboards or member portals.
+
+8. 📣 Announcement or Notification Widget
+
+Non-intrusive way to share announcements, COVID info, outages, etc.
+
+9. 🌡️ Weather Widget
+
+Shows real-time weather at user’s or specified location.
+
+Can use OpenWeather API or similar.
+
+10. 🧭 Navigation Helper Widget
+
+Provides shortcuts or "Jump to Section" links for long pages.
+
+Functional Widgets
+
+1. 📆 Event Countdown Timer
+
+Shows time left until a sale/event launches.
+
+Can auto-hide after the deadline.
+
+2. ⏱️ Pomodoro Timer
+
+Focus timer for productivity sites.
+
+Could be embedded in blogs about productivity.
+
+3. 🔋 Battery Status Widget
+
+Shows user's battery level (via the Battery Status API).
+
+Niche but cool for device tools or system dashboards.
+
+4. 🛠️ Maintenance Mode Notification
+
+Widget to inform users of upcoming maintenance/downtime.
+
+5. 🧮 Calculator Widget
+
+Basic calculator (scientific, tip, or loan calculator).
+
+Used in financial, fitness, or e-commerce sites.
+
+
+
+🌐 Content & Navigation Widgets
+
+6. 🧭 Table of Contents
+
+Auto-generated links for blog post sections (anchors).
+
+Helps SEO and user navigation.
+
+7. 🧩 Multi-language Translator
+
+Uses Google Translate or DeepL APIs.
+
+Dynamically translates page content.
+
+8. 🔍 Live Search Widget
+
+As-you-type search for articles, products, etc.
+
+Could use Fuse.js for client-side fuzzy search.
+
+
+
+🧠 User Engagement Widgets
+
+9. 🎯 Polls & Quizzes
+
+Simple multi-choice quiz or feedback poll.
+
+Can collect results to backend or display instant results.
+
+10. ⭐ Rating/Review Widget
+
+Star ratings for posts or products.
+
+Option to submit text reviews.
+
+11. 📢 News Ticker
+
+Rotating banner for headlines or announcements.
+
+12. 📩 Newsletter Signup
+
+Integrates with Mailchimp, ConvertKit, etc.
+
+Appears as slide-in or sticky widget.
+
+
+
+📈 Data & Visual Widgets
+
+13. 📊 Live Charts
+
+Embed dynamic charts (line, pie, bar).
+
+Use Chart.js or ApexCharts.
+
+14. 🌍 Geo-location Info
+
+Displays user's country, city, or IP address.
+
+Great for custom offers or localization.
+
+15. 📉 Crypto or Stock Price Ticker
+
+Shows live BTC, ETH, or stock prices.
+
+Uses public APIs like CoinGecko or Yahoo Finance.
+
+
+
+💬 Interactive & Social Widgets
+
+16. 🗨️ Live Chat Support
+
+Embed third-party (Tawk.to, Crisp) or custom solution.
+
+17. 👥 Social Media Feed
+
+Show Instagram, Twitter, or TikTok feeds.
+
+Good for influencers or brands.
+
+18. 📤 Floating Share Buttons
+
+Social share buttons with click counters.
+
+Works on mobile and desktop.
+
+
+
+🧘‍♀️ Fun & Gamified Widgets
+
+19. 🪙 Spin-the-Wheel / Giveaway Widget
+
+For lead generation or gamified discount delivery.
+
+20. 🌈 Theme Switcher
+
+Toggle between light/dark mode.
+
+21. 🎲 Random Quote / Joke Generator
+
+Pulls from a predefined list or external API.
+
+22. 🎁 Daily Deal / Mystery Box
+
+Changes content based on date or time of visit.
+
+
+
+🏆 Bonus Ideas for SaaS or Dashboards
+
+✅ Task Checklist Widget
+
+📌 Sticky Notes / Memo Pad
+
+🕵️ Privacy Settings Widget
+
+🚦 System Status Indicator
+
+📁 File Uploader (Drag & Drop)
+
+🔑 Password Strength Checker
+
+
+Small Games for Widget Panels
+
+1. Tic-Tac-Toe
+Classic 3x3 grid game. Simple, quick, and very popular.
+
+2. Memory Matching (Concentration)
+Flip cards and match pairs. Easy grid, simple logic.
+
+3. Snake
+Small grid-based snake game, simple controls.
+
+4. 2048
+Sliding tile puzzle game with powers of two.
+
+5. Minesweeper (Mini version)
+Small grid, basic minesweeper rules.
+
+6. Rock-Paper-Scissors
+Quick hand game, perfect for tiny UI.
+
+7. Simon Says (Memory Sequence)
+Light up buttons in sequence, user repeats.
+
+8. Sliding Puzzle (15 Puzzle)
+Small tiles shuffled, slide to order.
+
+9. Dots and Boxes (Small grid)
+Connect dots to form boxes, turn-based.
+
+10. Pong (Mini)
+Simple paddle and ball game, minimal UI.
+
+11. Whack-a-Mole
+Tap on moles that pop up in a small grid. Time-based.
+
+12. Color Guessing Game
+Show a color code (e.g., RGB) and offer options to guess which color it is.
+
+13. Hangman
+Classic word guessing game, very compact.
+
+14. Word Scramble (Anagram Puzzle)
+Unscramble letters to form a word. Easy logic.
+
+15. Reaction Time Test
+Tap as fast as possible when the screen changes color.
+
+16. Quiz/Trivia Game
+One-question-at-a-time style, with multiple choice.
+
+17. Math Challenge / Fast Math
+Quick equations the user must solve under a time limit.
+
+18. Click the Target
+Circles appear randomly and disappear fast—user must click them.
+
+19. Typing Speed Test
+Show short phrases, measure typing speed/accuracy.
+
+20. Coin Toss / Dice Roller
+Randomizer-style games with nice visual effects.
+
+
+
+💡 Game-like Utilities (still fun)
+
+21. Fortune Cookie / Spinner
+Display random fortune or advice on click.
+
+22. Daily Puzzle / Riddle
+One new riddle or challenge per day.
+
+23. Random Emoji Picker
+Click to generate a random emoji (can be gamified).
+
+24. Mini Maze Solver
+Use arrow keys to navigate a tiny maze.
+
+25. Spot the Difference (Tiny Version)
+Show two similar 100px images, find the change.
+
+🔁 More Small Games for Widget Panels
+
+21. Tower of Hanoi (Mini)
+
+Move disks between pegs following rules. A small 3-disk version is quick and fun.
+
+22. Lights Out
+
+Toggle tiles to turn off all lights. Pressing one tile toggles adjacent ones—simple puzzle logic.
+
+23. Nim Game
+
+Players take turns removing objects from piles. Last to move wins (or loses—configurable).
+
+24. Emoji Memory Match
+
+Like classic memory matching, but uses emojis instead of card images—great for compact visual space.
+
+25. Balance Game
+
+Tap to keep a dot or object balanced between two borders; think mini "physics toy."
+
+26. One-Line Drawing
+
+Connect all dots using a single continuous line without repeating paths.
+
+27. Quick Tap
+
+Tap a specific icon (e.g., red circle) among distractors before time runs out.
+
+28. Reaction Chain
+
+Tap once to trigger a chain reaction—see how many "targets" you can hit.
+
+29. Number Merge
+
+Mini version of 2048, but with numbers 1–10 merging in basic math (e.g., 1+1 → 2).
+
+30. Mini Platform Jumper
+
+Single-button control for a square or circle jumping between platforms.
+
+31. Hidden Object (Mini Version)
+
+Find a tiny object hidden in a crowded widget screen.
+
+32. Paper, Scissors, Spock, Lizard
+
+Extended version of Rock-Paper-Scissors with five options.
+
+33. Mini Sudoku
+
+3x3 or 4x4 Sudoku grid for super-fast logic play.
+
+34. Tap Pattern
+
+Repeat a quick tap pattern (like a drum beat). Think: tap–tap–pause–tap.
+
+35. Path Finder
+
+Drag to create a path from start to finish without hitting obstacles.
+
+36. Guess the Sound
+
+Play a sound (like beep, click, swoosh) and let users guess the correct label.
+
+37. Quick Maze
+
+Tiny 5x5 or 6x6 maze where user drags or taps to escape.
+
+38. Shape Sorter
+
+Match falling or shown shapes with their outlines—drag or tap to match.
+
+39. Odd One Out
+
+Three to five options shown—one doesn’t fit. Pick it quickly.
+
+40. Memory Numbers
+
+Briefly show a sequence of numbers—user has to repeat them.
+
+
+41. Tap the Sequence
+
+Tap numbered tiles in order (1–9), randomized each round.
+
+42. Pixel Art Coloring
+
+User taps to color small pixel grids (e.g., 8x8) by number or color.
+
+43. Mini Golf Putt
+
+Simple single-tap strength meter—try to get ball in hole in one shot.
+
+44. Quick Chess Puzzle
+
+Show a small chessboard with a one-move checkmate scenario.
+
+45. Box Evade
+
+Move a box to dodge falling blocks (left/right tap controls).
+
+46. Wires & Circuits
+
+Connect matching color terminals without lines crossing. Think mini logic puzzles.
+
+47. Elevator Drop
+
+Tap at the right time to stop an elevator on the correct floor.
+
+48. Stack the Blocks
+
+Tap to drop blocks—try to keep tower straight and tall.
+
+49. Wire Cutter
+
+Given a set of wires, choose the correct one to "defuse" a fake bomb.
+
+50. Quick Count
+
+Show fast-moving items; user guesses how many were shown.
+
+51. Tilt Maze
+
+Tilt (or simulate tilt) to move a dot through a small maze.
+
+52. Card High-Low
+
+Predict if the next card will be higher or lower than the current.
+
+53. Mini Blackjack
+
+Fast version—one hand, single hit or stand decision.
+
+54. Sound Match
+
+Play two quick tones. Are they the same or different?
+
+55. Swipe Direction
+
+Quickly swipe in the direction shown (arrow or gesture).
+
+56. Mirror Match
+
+Show mirrored patterns—tap if correct, skip if not.
+
+57. Emoji Reaction
+
+Tap the correct emoji based on a word prompt (e.g., "happy").
+
+58. Fast Shapes
+
+Tap matching shape when it appears among random options.
+
+59. Code Breaker
+
+Guess a short 3-digit code with hints (like Mastermind, but shorter).
+
+60. Mini Fishing Game
+
+Tap when the fish bites—simple reflex timing.
+
+61. Math Grid
+
+Select correct answers in a grid (e.g., 3x3) for given equations.
+
+62. Mini Rhythm Tap
+
+Tap to the beat on small loops of 4–5 beats.
+
+63. Match the Flags
+
+Match country names to their flags in a quick-pick format.
+
+64. Color Order Memory
+
+Show color sequence, user repeats order (like Simon but with color blocks only).
+
+65. Quick Sudoku Fill
+
+Mini game shows partial grid and asks for just 1–2 missing numbers.
+
+66. Slide to Match
+
+Slide rows/columns to match 3 or more tiles (Match-3 micro version).
+
+67. Cup Shuffle
+
+Watch 3 cups shuffle and pick the one with the ball.
+
+68. Balance Scale
+
+Determine which side of a simple digital scale is heavier/lighter.
+
+69. Micro Darts
+
+Tap to throw a dart at the center of a bullseye.
+
+70. Tap All Green
+
+A few colored tiles appear—tap all green ones fast, avoid reds.
+
+71. Odd Color Out
+
+Show a grid of similar colors—tap the slightly different one.
+
+72. Instant Crossword
+
+One-word crossword-style puzzle (e.g., 3–5 letter clue).
+
+73. Quick Sort
+
+Drag a few simple items into their correct categories (e.g., fruit vs. veg).
+
+74. Memory Trail
+
+Watch a short path animation, then repeat by tapping the same tiles.
+
+75. Stopwatch Challenge
+
+Stop a timer as close as possible to a given number (e.g., 3.00s).
+
+76. Fast Flip
+
+Flip a tile to match another tile's color/symbol before timer runs out.
+
+77. Bubble Pop
+
+Tap fast to pop bubbles as they rise—each tap adds to score.
+
+78. Color Mix
+
+Mix red/green/blue sliders to match a target color.
+
+79. Flash Numbers
+
+A few numbers flash quickly—user must add them mentally.
+
+80. Pattern Repeat
+
+Copy a shown grid pattern (e.g., black and white squares) on a blank grid.
+
+81. Speed Maze
+
+Navigate a super-simple maze before a timer runs out.
+
+82. Image Match
+
+See a picture briefly—then choose the same image from a small set.
+
+83. Tap the Color Word
+
+The word “Blue” appears in red text—tap the color, not the word (Stroop effect).
+
+84. Direction Dash
+
+Arrows flash in directions—quickly swipe in that direction.
+
+85. Same or Different?
+
+Flash two images/symbols side by side—are they the same?
+
+86. Shadow Match
+
+Match a silhouette to one of several objects.
+
+87. Fast Equation
+
+Pick the correct answer to a math question (e.g., 7 + 6 = ?), but under a time limit.
+
+88. Stack Order
+
+Tap falling blocks in the correct sequence (e.g., 1–2–3).
+
+89. Guess the Flag
+
+Flash a country name—tap the correct flag out of 3–4 options.
+
+90. Fast Fill-in-the-Blank
+
+Very short sentence with one word missing—tap the correct word.
+
+91. Animal Sound Match
+
+Play an animal sound, user picks the animal.
+
+92. Quick Shadow Tap
+
+Tap the object that matches a shadow shown at the top.
+
+93. Emoji Pattern
+
+Repeat a short emoji sequence (e.g., 😀🎉😴).
+
+94. Quick Reaction Duel
+
+Two players tap as fast as possible after a “Go!” signal.
+
+95. Catch the Dot
+
+A dot bounces around the panel. Tap it quickly before it disappears.
+
+96. Fast Tile Flip
+
+Tap tiles to turn them all to the same color (e.g., toggle between two states).
+
+97. Quick Typo Spotter
+
+Find the spelling mistake in a word or sentence.
+
+98. Mini Logic Grid
+
+Very small (2x2 or 3x3) logic puzzles. E.g., who owns the cat?
+
+99. Reverse the Sequence
+
+Show a number or color sequence—user must input it in reverse.
+
+100. Flash Face
+
+Show a face emoji quickly. Was it happy, sad, angry, or surprised?
+
+101. Guess the Soundtrack
+
+Play a few notes from a song or jingle—guess from 3–4 options.
+
+102. Quick Draw
+
+User draws a shape on a tiny canvas (e.g., circle, triangle, star).
+
+103. Simple Blackjack Bot
+
+Player vs. bot in a super-streamlined blackjack hand.
+
+104. Flip to Match
+
+Flip over tiles to match pairs, but only a few tiles and short memory.
+
+105. True or False
+
+Show a fact. User taps "True" or "False." Score updates immediately.
+
+106. Pixel Trail
+
+Follow a short animated trail and repeat it by tapping tiles in order.
+
+107. One Tap Jump
+
+Tap at the right time to make a dot jump over a gap.
+
+108. Color Filter Game
+
+Tap the image with the correct color tone (e.g., grayscale vs. color).
+
+109. Quick Find Letter
+
+A grid of letters appears—tap the hidden word or target letter quickly.
+
+110. Find the Matching Pair
+
+A group of cards/tiles—find the only pair with matching images.
+
+111. Sound Tap Game
+
+Tap only when you hear a specific sound in a sequence.
+
+112. Zoom Guess
+
+Show a zoomed-in image. Can the user guess what it is?
+
+113. Dice Total
+
+Roll two or three dice—quickly choose the total.
+
+114. Temperature Convert
+
+Quick game: convert °C to °F or vice versa under time pressure.
+
+115. Hidden Math
+
+A math equation is hidden behind tiles—reveal and solve quickly.
+
+116. Quick Spelling
+
+User spells a flashed word one letter at a time, with suggestions.
+
+117. Direction Memory
+
+Flash an arrow pattern (e.g., ↑ → ↓)—user repeats it after it's gone.
+
+118. Speed Compass
+
+"North", "South", etc. flashes—swipe or tap the correct compass direction.
+
+119. What Comes Next?
+
+Show a sequence (e.g., A, B, C...)—user picks the next item.
+
+120. Balance Puzzle
+
+Use tap controls to keep a seesaw or balance beam level.
+
+121. Odd Emoji Out
+
+Show 5 emojis—4 are similar, 1 is off. Tap the odd one out.
+
+122. Quick Compass Spin
+
+A compass rotates—tap when it points north.
+
+123. Silent Countdown
+
+Start a countdown—user must tap when they think time’s up.
+
+124. Math Tile Merge
+
+Merge tiles to make a target number (e.g., 3 + 2 → 5).
+
+125. Ping Pong Reflex
+
+Ball bounces side to side—tap to return it at the right time.
+
+126. Elevator Escape
+
+Tap the floor number that will avoid obstacles above/below.
+
+127. Quick Typing Letter
+
+Type or tap the key shown within 1 second.
+
+128. Color Wheel Match
+
+Spin a color wheel to match a target color.
+
+129. Emoji Order
+
+Tap emojis in alphabetical or emotional order (e.g., happy → angry).
+
+130. Mini Geography Tap
+
+Map zooms in—tap the correct city/country shown.
+
+131. Quick Logic Sort
+
+Sort 3–5 items by size, color, or weight within 5 seconds.
+
+132. Flash Phrase Memory
+
+A short phrase appears (e.g., "Blue Sky Above")—type it after it disappears.
+
+133. Keyboard Sequence
+
+Press 3 keys shown (e.g., A → S → D) as quickly as possible.
+
+134. Face Builder
+
+Tap features (eyes, nose, mouth) to match a shown face.
+
+135. Word-Color Swap
+
+The word "Yellow" appears in green—choose the font color, not the word.
+
+136. Emoji Reaction Chain
+
+Tap the next logical emoji (🔥 → 🚒, ☔ → ☂️).
+
+137. Fruit Catch
+
+Swipe to catch only fruit, not bombs, in a fast-moving drop game.
+
+138. Mini Hangman (Emoji Version)
+
+Guess emoji sequences (e.g., 🐱+🧡 for "Cat Love").
+
+139. Slide to Escape
+
+Slide tiles to create a path for a block to exit the grid.
+
+140. Laser Bounce
+
+Adjust mirrors or angles to direct a laser to a target.
+
+141. Clock Hand Match
+
+Stop rotating clock hands on a matching time (e.g., 3:00).
+
+142. Symbol Sequence
+
+Memorize and repeat symbols (e.g., ♦︎ ♣︎ ♥︎ ♠︎).
+
+143. Pop the Prime
+
+Tap numbers that are prime only—avoid composites.
+
+144. Emoji Grid Recall
+
+View a 3x3 emoji grid, then recreate it.
+
+145. Quick Binary
+
+Convert 0s and 1s into a decimal number fast.
+
+146. Mini Directional Maze
+
+Tap up/down/left/right to exit a tiny maze.
+
+147. Flip It!
+
+Cards flip rapidly—tap when a specific card is shown.
+
+148. Reflection Tap
+
+A grid of objects mirrored—tap the mismatch or incorrect reflection.
+
+149. Sudden Shape
+
+Tap the shape that appeared briefly and vanished.
+
+150. Dot Pattern Memory
+
+Small grid of dots lights up in a pattern—repeat it from memory.
+
+151. Slide to Number
+
+Slide a bar/slider to hit a random number target with no indicator.
+
+152. Time Zone Match
+
+Given two cities, tap whether they’re in the same time zone.
+
+153. Color Filter Guess
+
+View a filtered image—guess the original color.
+
+154. Animal Sprint
+
+Mini race—tap fast to move your animal icon across a small track.
+
+155. Weight Match
+
+Choose the item that weighs more (e.g., rock vs. balloon).
+
+156. Sound Pattern
+
+Hear a beep pattern—repeat by tapping the same rhythm.
+
+157. Line Match
+
+Drag or draw a shape to match a displayed silhouette.
+
+158. Quick Budget
+
+You have $10—buy only items that total exactly $10.
+
+159. Mini Tetris Block Drop
+
+One block drops at a time—fit it before the next.
+
+160. One Tap Goal
+
+Ball rolls—tap once to shoot into a mini-goal at the right angle.
+
+161. Emoji Equation
+
+Solve puzzles like 🍎 + 🍎 = 🍏 + ?, figure out the missing emoji.
+
+162. Color Memory Fade
+
+Color blocks fade quickly—remember and recreate them before they disappear.
+
+163. Quick Fold (Origami Sim)
+
+Tap the correct folding steps to "fold" a shape (2–3 steps only).
+
+164. Flashcard Blitz
+
+View fast flashcards (e.g., word → definition) and match the right pair.
+
+165. Drop the Needle
+
+Mini music game—tap when the beat hits or a marker lands on a line.
+
+166. Mini Reaction Race
+
+Hold down a button—release only when the light turns green.
+
+167. Speed Puzzle Slice
+
+An image is sliced into 4–6 tiles—reorder it fast.
+
+168. Quick Coordinates
+
+Given (x, y), tap the correct grid tile (e.g., in a 3x3 layout).
+
+169. Symbol Math
+
+⚡ + ⚡ = ?, with visual symbols replacing numbers—figure it out.
+
+170. Quick Stack Order
+
+Stack items by size, shape, or height in correct order.
+
+171. Odd Clock Out
+
+One of several clocks shows the wrong time—find it.
+
+172. Word Flash Backwards
+
+A word flashes for a second—type or choose it backwards.
+
+173. Animal Tracks Match
+
+Match footprints to the animal.
+
+174. Quick Calendar Tap
+
+Given a date, tap the correct weekday (e.g., Aug 1, 2025 = Friday).
+
+175. Mirror Numbers
+
+Tap numbers that are mirrored (e.g., 3 vs. a flipped 3).
+
+176. Quick Zoom Puzzle
+
+Zoom into a picture—guess the object from a close-up.
+
+177. Emotional Match
+
+Match emoji to scenario (e.g., “Got a gift” → 🎁😄).
+
+178. Quick Path Math
+
+Draw a path from start to finish by solving mini equations along the way.
+
+179. Flash Grid Memory
+
+Grid lights up in a pattern—remember which tiles were on.
+
+180. Simple Tap Music
+
+Tap in time with short, looping musical beats (like GarageBand but simpler).
+
+181. Quick Jigsaw
+
+Fit 2–3 oddly shaped tiles into a small grid.
+
+182. Dot Follow
+
+A dot moves along a path—repeat it from memory.
+
+183. Tap the Palindrome
+
+Pick which word or number is a palindrome (e.g., “radar”, “1221”).
+
+184. Quick Morse Code
+
+See or hear a simple Morse pattern—match it to a letter.
+
+185. Single Tap Climb
+
+Tap to keep a character climbing, avoid obstacles.
+
+186. Quick Spot the Word
+
+Pick the real word among fake ones (e.g., “glorb, plink, jazz, blaf”).
+
+187. Tiny Tapping Tree
+
+Tap to grow a tree leaf by leaf in sequence.
+
+188. Quick Thermometer Read
+
+Read and report the value shown on a thermometer.
+
+189. Ball Bounce Match
+
+Count bounces and select the matching number.
+
+190. Match the Planet
+
+Given a planet name, pick the right image/icon from a small set.
+
+191. Quick Constellation Quiz
+
+Match star dots to their correct constellation name.
+
+192. Connect the Colors
+
+Draw a line to match colored pairs (e.g., red to red), on a mini grid.
+
+193. Speed Typing Challenge
+
+One word appears—type it correctly under pressure.
+
+194. Guess the Blur
+
+An image is heavily blurred—choose the object from 3 options.
+
+195. Fastest Finger
+
+Tap only when a specific shape or number appears, ignore the rest.
+
+196. Color Flood
+
+Fill a small grid with the same color in the fewest moves (like Flood-It).
+
+197. Swipe Sequence
+
+Swipe in a specific pattern (e.g., right, up, down)—in time.
+
+198. Quick Word Build
+
+Given letters like C, A, T—build a 3-letter word from it.
+
+199. Swipe That Math
+
+Swipe left/right if equation is correct or false (e.g., 2+2=5?).
+
+200. Mini Physics Drop
+
+Drop a ball through pegs or bumpers (like Plinko), try to land it in the right target bin.
