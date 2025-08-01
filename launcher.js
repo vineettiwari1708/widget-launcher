@@ -1299,8 +1299,8 @@
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tic-tac-toe-widget.js"
       },
       {
-        label: "💬",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/box-livechat-widget/main/livechat-widget.js"
+        label: "🧠",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-matching.js"
       }
     ];
 
