@@ -172,7 +172,11 @@
   label: "🧱", // Quick Maze
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-maze-widget.js"
 }
-
+,
+     {
+  label: "🧊", // Shape Sorter
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/shape-sorter-widget.js"
+}
 
 ];
 
