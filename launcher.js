@@ -1171,6 +1171,7 @@
       backdrop-filter: blur(8px);
       overflow-y: auto;
       box-sizing: border-box;
+      width: 400px;
     `;
     container.appendChild(widgetBar);
     document.body.appendChild(container);
