@@ -163,6 +163,11 @@
   label: "🚶", // Path Finder – compass represents navigation
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/path-finder-widget.js"
 }
+     ,
+     {
+  label: "🔊", // Guess the Sound
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/guess-the-sound-widget.js"
+}
 
 ];
 
