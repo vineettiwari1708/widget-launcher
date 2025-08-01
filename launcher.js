@@ -128,6 +128,11 @@
     label: "🟥", // Quick Tap
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-tap-widget.js"
   }
+     ,
+  {
+    label: "🧪", // Quick Tap
+    src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/reaction-chain-widget.js"
+  }
 ];
 
 
