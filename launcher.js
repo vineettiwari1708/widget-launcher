@@ -143,6 +143,12 @@
   label: "🔎", // Hidden Object = magnifying glass
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/hidden-object-widget.js"
 }
+     ,
+     {
+  label: "🦎", // Paper, Scissors, Spock, Lizard icons combo
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/pssl-widget.js"
+}
+     
 
 ];
 
