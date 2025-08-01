@@ -37,6 +37,11 @@
         label: "🎵",
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/simon-says-widget.js"
       }
+      ,
+      {
+        label: "🧩",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/sliding-puzzle-widget.js"
+      }
     ];
 
     const state = { isOpen: false };
