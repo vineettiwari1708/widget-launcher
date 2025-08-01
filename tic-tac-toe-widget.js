@@ -258,7 +258,7 @@
     // Re-render original buttons (assuming launcher has renderButtons exposed globally)
     if (typeof window.renderLauncherButtons === "function") {
       widgetBox.innerHTML = "";
-      window.renderLauncherButtons();
+      window.renderButtons();
     }
   });
 
