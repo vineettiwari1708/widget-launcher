@@ -105,6 +105,11 @@
     label: "😀", // Mini Maze Solver = compass
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tower-of-hanoi-widget.js"
   }
+       ,
+  {
+    label: "💡", // Mini Maze Solver = compass
+    src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/lights-out.js"
+  }
 ];
 
     const state = { isOpen: false };
