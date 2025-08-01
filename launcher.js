@@ -15,17 +15,17 @@
       ,
       {
         label: "🐍",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-matching.js"
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/snake-widget.js"
       }
        ,
       {
         label: "2048",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-matching.js"
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/2048-widget.js"
       }
       ,
       {
         label: "💣",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-matching.js"
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/minesweeper-widget.js"
       }
        ,
       {
