@@ -857,6 +857,63 @@
       {
         label: "⏰",
         src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+      }, {
+        label: "💬",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+      },
+      {
+        label: "🌐",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+      },
+      {
+        label: "⏰",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+      },
+      {
+        label: "🌐",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+      },
+      {
+        label: "⏰",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+      },{
+        label: "💬",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+      },
+      {
+        label: "🌐",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+      },
+      {
+        label: "⏰",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+      },
+      {
+        label: "🌐",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+      },
+      {
+        label: "⏰",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+      },{
+        label: "💬",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/chat-widget.js"
+      },
+      {
+        label: "🌐",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+      },
+      {
+        label: "⏰",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
+      },
+      {
+        label: "🌐",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/translate-widget.js"
+      },
+      {
+        label: "⏰",
+        src: "https://raw.githubusercontent.com/youruser/repo/main/countdown-widget.js"
       }
     ];
 
