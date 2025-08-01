@@ -983,13 +983,13 @@
       justify-content: center;
       align-items: center;
       gap: 16px;
-      width: 400px;
+      max-width: 400px;
       max-height: 400px;
       background: rgba(255, 255, 255, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.4);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       border-radius: 16px;
-      padding: 20px;
+      padding: 5px;
       position: absolute;
       right: 60px;
       top: 50%;
@@ -1000,6 +1000,7 @@
       overflow-y: auto;
       box-sizing: border-box;
       z-index: 0;
+      width: 400px;
     `;
 
     // Responsive style
