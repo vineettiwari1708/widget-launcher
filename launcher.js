@@ -186,6 +186,9 @@
   label: "🔢", // Memory Numbers
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-numbers-widget.js"
 }
+     ,
+     { label: "🔢", 
+      src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tap-sequence-widget.js" }
 
 
 ];
