@@ -926,7 +926,7 @@
       justify-content: center;
       align-items: center;
       gap: 16px;
-      max-width: 400px;
+      width: 400px;
       max-height: 400px;
       background: rgba(255, 255, 255, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.4);
