@@ -801,7 +801,7 @@
 
     const widgetList = [
       {
-        label: "💬",
+        label: "❌",
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tic-tac-toe-widget.js"
       },
       {
