@@ -138,6 +138,12 @@
     label: "🕹️", // Quick Tap
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/platform-jumper-widget.js"
   }
+     ,
+     {
+  label: "🔎", // Hidden Object = magnifying glass
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/hidden-object-widget.js"
+}
+
 ];
 
 
