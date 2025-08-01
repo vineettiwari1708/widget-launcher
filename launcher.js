@@ -130,6 +130,11 @@
     label: "✏️", // Emoji Memory Match = compass
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/one-line-drawing-widget.js"
   }
+  ,
+  {
+    label: "🟥", // quick-tap-widget = compass
+    src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-tap-widget.js"
+  }
 ];
 
     const state = { isOpen: false };
