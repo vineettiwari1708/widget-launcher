@@ -102,6 +102,26 @@
         label: "🎲",
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/coin-dice-widget.js"
       }
+      ,
+      {
+        label: "🥠",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/spinner-widget.js"
+      }
+      ,
+      {
+        label: "🎯",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/click-target-widget.js"
+      }
+      ,
+      {
+        label: "📝",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/typing-speed-test-widget.js"
+      }
+       ,
+      {
+        label: "🎲",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/coin-dice-widget.js"
+      }
     ];
 
     const state = { isOpen: false };
