@@ -196,6 +196,12 @@
        label: "🎨", 
        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/pixel-art-coloring-widget.js" 
      }
+     ,
+     {
+      label: "⛳", // Mini Golf Putt = golf flag
+      src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/mini-golf-putt-widget.js"
+      }
+
 
 
 
