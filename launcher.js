@@ -153,6 +153,11 @@
   label: "🧩",
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/mini-sudoku-widget.js"
 }
+     ,
+     {
+  label: "🥁", // Tap Pattern - drum emoji fits the rhythm/tap idea
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tap-pattern-widget.js"
+}
 
 ];
 
