@@ -181,6 +181,11 @@
   label: "🧠", // Odd One Out
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/odd-one-out-widget.js"
 }
+     ,
+     {
+  label: "🔢", // Memory Numbers
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-numbers-widget.js"
+}
 
 
 ];
