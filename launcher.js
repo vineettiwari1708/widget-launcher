@@ -52,6 +52,11 @@
         label: "🏓",
         src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/pong-mini-widget.js"
       }
+      ,
+      {
+        label: "🐹",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/whack-a-mole-widget.js"
+      }
     ];
 
     const state = { isOpen: false };
