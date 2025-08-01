@@ -133,7 +133,7 @@
     widgetBar.classList.add("widget-box");
     widgetBar.style.cssText = `
       display: none; flex-wrap: wrap; gap: 16px;
-      max-width: 400px; width: 400px; max-height: 400px;
+      max-width: 400px; width: 380px; max-height: 400px;
       background: rgba(255,255,255,0.3);
       border: 1px solid rgba(255,255,255,0.4);
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
