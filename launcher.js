@@ -84,8 +84,8 @@
       }
       ,
       {
-        label: "🔵",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/dots-and-boxes-widget.js"
+        label: "🧮",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/math-challenge-widget.js"
       }
       ,
       {
