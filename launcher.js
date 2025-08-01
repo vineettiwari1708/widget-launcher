@@ -102,13 +102,18 @@
   }
       ,
   {
-    label: "😀", // Mini Maze Solver = compass
+    label: "😀", // Tower of Hanoi = compass
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tower-of-hanoi-widget.js"
   }
        ,
   {
-    label: "💡", // Mini Maze Solver = compass
+    label: "💡", // Lights Out = compass
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/lights-out.js"
+  }
+       ,
+  {
+    label: "🎯", // Nim Game Widget = compass
+    src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/nim-game-widget.js"
   }
 ];
 
