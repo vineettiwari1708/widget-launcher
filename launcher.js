@@ -115,10 +115,15 @@
     label: "🎯", // Nim Game Widget = compass
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/nim-game-widget.js"
   }
-        ,
+        ,⚖
   {
     label: "🧠", // Emoji Memory Match = compass
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/emoji-memory-match.js"
+  }
+    ,
+  {
+    label: "⚖️", // Emoji Memory Match = compass
+    src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/balance-game-widget.js"
   }
 ];
 
