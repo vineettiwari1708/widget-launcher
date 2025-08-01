@@ -802,7 +802,7 @@
     const widgetList = [
       {
         label: "💬",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/box-livechat-widget/main/livechat-widget.js"
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tic-tac-toe-widget.js"
       },
       {
         label: "🌐",
