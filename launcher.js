@@ -64,8 +64,8 @@
       }
        ,
       {
-        label: "",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/minesweeper-widget.js"
+        label: "H",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/hangman-widget.js"
       }
        ,
       {
