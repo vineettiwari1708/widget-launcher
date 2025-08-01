@@ -201,6 +201,11 @@
       label: "⛳", // Mini Golf Putt = golf flag
       src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/mini-golf-putt-widget.js"
       }
+,
+     {
+  label: "♟️", // Quick Chess Puzzle = chess pawn
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-chess-puzzle-widget.js"
+}
 
 
 
