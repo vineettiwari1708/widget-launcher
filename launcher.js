@@ -148,7 +148,11 @@
   label: "🦎", // Paper, Scissors, Spock, Lizard icons combo
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/pssl-widget.js"
 }
-     
+     ,
+     {
+  label: "🧩",
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/mini-sudoku-widget.js"
+}
 
 ];
 
