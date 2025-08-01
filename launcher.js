@@ -94,8 +94,8 @@
       }
       ,
       {
-        label: "🐹",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/whack-a-mole-widget.js"
+        label: "📝",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/typing-speed-test-widget.js"
       }
        ,
       {
