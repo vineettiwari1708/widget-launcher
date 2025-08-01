@@ -3,25 +3,25 @@
     const launcherScript = document.querySelector(".widget-launcher");
     const position = launcherScript?.getAttribute("data-position") || "bottom-right";
 
-    const widgetList = [
+   const widgetList = [
   {
-    label: "❌", // Tic Tac Toe cross
+    label: "❌", // Tic Tac Toe
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tic-tac-toe-widget.js"
   },
   {
-    label: "🧠", // Memory Matching = brain
+    label: "🧠", // Memory Matching
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/memory-matching.js"
   },
   {
-    label: "🐍", // Snake game = snake
+    label: "🐍", // Snake
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/snake-widget.js"
   },
   {
-    label: "🔢", // 2048 = numbers
+    label: "🔢", // 2048
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/2048-widget.js"
   },
   {
-    label: "💣", // Minesweeper = bomb
+    label: "💣", // Minesweeper
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/minesweeper-widget.js"
   },
   {
@@ -29,113 +29,107 @@
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/rock-paper-scissors-widget.js"
   },
   {
-    label: "🎵", // Simon Says = music notes (memory sequence)
+    label: "🎵", // Simon Says
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/simon-says-widget.js"
   },
   {
-    label: "🧩", // Sliding Puzzle = puzzle piece
+    label: "🧩", // Sliding Puzzle
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/sliding-puzzle-widget.js"
   },
   {
-    label: "🔵", // Dots and Boxes = dots
+    label: "🔵", // Dots and Boxes
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/dots-and-boxes-widget.js"
   },
   {
-    label: "🏓", // Pong mini = ping pong paddle/ball
+    label: "🏓", // Pong Mini
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/pong-mini-widget.js"
   },
   {
-    label: "🐹", // Whack-a-Mole = mole
+    label: "🐹", // Whack-a-Mole
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/whack-a-mole-widget.js"
   },
   {
-    label: "🎨", // Color Guessing Game = palette
+    label: "🎨", // Color Guessing Game
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/color-guessing-widget.js"
   },
   {
-    label: "👤", // Hangman = trap (closest emoji)
+    label: "👤", // Hangman
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/hangman-widget.js"
   },
   {
-    label: "🔤", // Word Scramble = letters
+    label: "🔤", // Word Scramble
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/word-scramble-widget.js"
   },
   {
-    label: "⏱️", // Reaction Time = stopwatch
+    label: "⏱️", // Reaction Time Test
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/reaction-time-widget.js"
   },
   {
-    label: "❓", // Quiz/Trivia = question mark
+    label: "❓", // Quiz / Trivia
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quiz-widget.js"
   },
   {
-    label: "🧮", // Math Challenge = abacus
+    label: "🧮", // Math Challenge
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/math-challenge-widget.js"
   },
   {
-    label: "🎯", // Click the Target = dartboard
+    label: "🎯", // Click the Target
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/click-target-widget.js"
   },
   {
-    label: "⌨️", // Typing Speed Test = keyboard
+    label: "⌨️", // Typing Speed Test
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/typing-speed-test-widget.js"
   },
   {
-    label: "🎲", // Coin Toss / Dice Roller = dice
+    label: "🎲", // Coin Toss / Dice Roller
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/coin-dice-widget.js"
   },
   {
-    label: "🥠", // Fortune Cookie / Spinner = fortune cookie
+    label: "🥠", // Fortune Cookie / Spinner
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/spinner-widget.js"
   },
   {
-    label: "🧩", // Daily Puzzle = puzzle piece again
+    label: "🧩", // Daily Puzzle
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/daily-puzzle.js"
   },
   {
-    label: "😀", // Random Emoji Picker = smiley face
+    label: "😀", // Random Emoji Picker
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/random-emoji-picker.js"
   },
   {
-    label: "🧭", // Mini Maze Solver = compass
+    label: "🧭", // Mini Maze Solver
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/mini-maze-solver.js"
-  }
-      ,
+  },
   {
-    label: "😀", // Tower of Hanoi = compass
+    label: "🗼", // Tower of Hanoi
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/tower-of-hanoi-widget.js"
-  }
-       ,
+  },
   {
-    label: "💡", // Lights Out = compass
+    label: "💡", // Lights Out
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/lights-out.js"
-  }
-       ,
+  },
   {
-    label: "🎯", // Nim Game Widget = compass
+    label: "♟️", // Nim Game
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/nim-game-widget.js"
-  }
-        ,⚖
+  },
   {
-    label: "🧠", // Emoji Memory Match = compass
+    label: "🃏", // Emoji Memory Match
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/emoji-memory-match.js"
-  }
-    ,
+  },
   {
-    label: "⚖️", // Emoji Memory Match = compass
+    label: "⚖️", // Balance Game
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/balance-game-widget.js"
-  }
-    ,
+  },
   {
-    label: "✏️", // Emoji Memory Match = compass
+    label: "✏️", // One-Line Drawing
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/one-line-drawing-widget.js"
-  }
-  ,
+  },
   {
-    label: "🟥", // quick-tap-widget = compass
+    label: "🟥", // Quick Tap
     src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-tap-widget.js"
   }
 ];
+
 
     const state = { isOpen: false };
     const container = document.createElement("div");
