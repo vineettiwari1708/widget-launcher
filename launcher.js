@@ -176,7 +176,12 @@
      {
   label: "🧊", // Shape Sorter
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/shape-sorter-widget.js"
+},
+     {
+  label: "🧠", // Odd One Out
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/odd-one-out-widget.js"
 }
+
 
 ];
 
