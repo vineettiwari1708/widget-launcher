@@ -99,8 +99,8 @@
       }
        ,
       {
-        label: "🎨",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/color-guessing-widget.js"
+        label: "🎲",
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/coin-dice-widget.js"
       }
     ];
 
