@@ -120,7 +120,7 @@
        ,
       {
         label: "🎲",
-        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/coin-dice-widget.js"
+        src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/mini-maze-solver.js"
       }
     ];
 
