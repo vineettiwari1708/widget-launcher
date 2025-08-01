@@ -1,31 +1,40 @@
-
 (function () {
-  if (document.getElementById("hanoi-container")) return;
+  if (document.getElementById("hanoi-widget-container")) return;
+
+  const widgetBox = document.querySelector(".widget-box");
+  if (!widgetBox) return;
+
+  widgetBox.innerHTML = "";
 
   const style = document.createElement("style");
   style.textContent = `
-    #hanoi-container {
-      width: 320px;
+    #hanoi-widget-container {
+      font-family: sans-serif;
       padding: 16px;
-      background: #fff;
+      background: #f8f8f8;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      font-family: Arial, sans-serif;
-      color: #333;
-      user-select: none;
+      width: 100%;
+      max-width: 300px;
+      margin: 10px auto;
       text-align: center;
     }
-    .peg {
-      display: inline-block;
+    .hanoi-pegs {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+    .hanoi-peg {
       width: 80px;
       height: 120px;
-      margin: 0 10px;
-      background: #f1f1f1;
+      background: #e0e0e0;
       border-radius: 8px;
       position: relative;
-      vertical-align: top;
+      cursor: pointer;
     }
-    .disk {
+    .hanoi-peg.selected {
+      border: 2px solid #007bff;
+    }
+    .hanoi-disk {
       position: absolute;
       height: 20px;
       border-radius: 4px;
@@ -34,109 +43,135 @@
       color: white;
       font-weight: bold;
     }
-    .disk[data-size="1"] { width: 40px; background: #2196f3; left: 20px; }
-    .disk[data-size="2"] { width: 60px; background: #4caf50; left: 10px; }
-    .disk[data-size="3"] { width: 80px; background: #f44336; left: 0; }
-    .peg.selected {
-      border: 2px solid #007bff;
-    }
-    #hanoi-message {
-      margin-top: 12px;
+    .hanoi-disk[data-size="1"] { width: 40px; background: #2196f3; left: 20px; }
+    .hanoi-disk[data-size="2"] { width: 60px; background: #4caf50; left: 10px; }
+    .hanoi-disk[data-size="3"] { width: 80px; background: #f44336; left: 0px; }
+    .message {
+      font-size: 16px;
       min-height: 24px;
       font-weight: bold;
+    }
+    .reset-btn, .close-btn {
+      padding: 6px 12px;
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .close-btn {
+      background: #dc3545;
+      margin-left: 10px;
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
     }
   `;
   document.head.appendChild(style);
 
   const container = document.createElement("div");
-  container.id = "hanoi-container";
-  container.innerHTML = `
-    <div><strong>Mini Tower of Hanoi</strong></div><br>
-    <div id="pegs" style="display: flex; justify-content: center;"></div>
-    <div id="hanoi-message"></div>
-  `;
+  container.id = "hanoi-widget-container";
 
-  const widgetBox = document.querySelector(".widget-box");
-  if (widgetBox) {
-    widgetBox.innerHTML = "";
-    widgetBox.appendChild(container);
-  } else {
-    document.body.appendChild(container);
-  }
+  const message = document.createElement("div");
+  message.className = "message";
+  message.textContent = "Solve the puzzle by moving all disks to the rightmost peg.";
 
-  const pegsContainer = container.querySelector("#pegs");
-  const message = container.querySelector("#hanoi-message");
+  const pegsEl = document.createElement("div");
+  pegsEl.className = "hanoi-pegs";
+
+  const resetBtn = document.createElement("button");
+  resetBtn.className = "reset-btn";
+  resetBtn.textContent = "Reset";
+
+  const closeBtn = document.createElement("button");
+  closeBtn.className = "close-btn";
+  closeBtn.textContent = "Close";
+
+  const buttonRow = document.createElement("div");
+  buttonRow.className = "button-row";
+  buttonRow.appendChild(resetBtn);
+  buttonRow.appendChild(closeBtn);
+
+  container.appendChild(message);
+  container.appendChild(pegsEl);
+  container.appendChild(buttonRow);
+  widgetBox.appendChild(container);
 
   const pegCount = 3;
   const diskCount = 3;
-  const pegs = [];
+  let pegs = [];
+  let selectedPeg = null;
 
-  let selectedPegIndex = null;
+  function initGame() {
+    pegs = Array.from({ length: pegCount }, () => []);
+    for (let i = diskCount; i >= 1; i--) {
+      pegs[0].push(i);
+    }
+    selectedPeg = null;
+    message.textContent = "Solve the puzzle by moving all disks to the rightmost peg.";
+    renderPegs();
+  }
 
   function renderPegs() {
-    pegsContainer.innerHTML = "";
-    pegs.forEach((peg, index) => {
+    pegsEl.innerHTML = "";
+    pegs.forEach((peg, i) => {
       const pegEl = document.createElement("div");
-      pegEl.className = "peg";
-      pegEl.dataset.index = index;
-      if (index === selectedPegIndex) {
-        pegEl.classList.add("selected");
-      }
+      pegEl.className = "hanoi-peg";
+      if (i === selectedPeg) pegEl.classList.add("selected");
 
-      peg.forEach((diskSize, i) => {
-        const disk = document.createElement("div");
-        disk.className = "disk";
-        disk.dataset.size = diskSize;
-        disk.style.bottom = `${i * 22}px`;
-        disk.textContent = diskSize;
-        pegEl.appendChild(disk);
+      peg.forEach((disk, dIndex) => {
+        const diskEl = document.createElement("div");
+        diskEl.className = "hanoi-disk";
+        diskEl.dataset.size = disk;
+        diskEl.textContent = disk;
+        diskEl.style.bottom = `${dIndex * 22}px`;
+        pegEl.appendChild(diskEl);
       });
 
-      pegEl.addEventListener("click", () => handlePegClick(index));
-      pegsContainer.appendChild(pegEl);
+      pegEl.addEventListener("click", () => handlePegClick(i));
+      pegsEl.appendChild(pegEl);
     });
   }
 
   function handlePegClick(index) {
-    if (selectedPegIndex === null) {
-      // Select source peg
+    if (selectedPeg === null) {
       if (pegs[index].length === 0) return;
-      selectedPegIndex = index;
+      selectedPeg = index;
     } else {
-      // Attempt to move from selected to current
-      if (index !== selectedPegIndex) {
-        const fromPeg = pegs[selectedPegIndex];
-        const toPeg = pegs[index];
-        const disk = fromPeg[fromPeg.length - 1];
+      if (selectedPeg !== index) {
+        const from = pegs[selectedPeg];
+        const to = pegs[index];
+        const disk = from[from.length - 1];
+        const topTo = to[to.length - 1];
 
-        if (
-          toPeg.length === 0 ||
-          toPeg[toPeg.length - 1] > disk
-        ) {
-          toPeg.push(fromPeg.pop());
+        if (!topTo || topTo > disk) {
+          to.push(from.pop());
           message.textContent = "";
         } else {
           message.textContent = "❌ Invalid move!";
         }
 
-        // Check for win
         if (pegs[2].length === diskCount) {
           message.textContent = "🎉 You solved it!";
         }
       }
-      selectedPegIndex = null;
+      selectedPeg = null;
     }
     renderPegs();
   }
 
-  // Initialize pegs
-  for (let i = 0; i < pegCount; i++) {
-    pegs[i] = [];
-  }
-  for (let i = diskCount; i >= 1; i--) {
-    pegs[0].push(i);
-  }
+  resetBtn.addEventListener("click", () => {
+    initGame();
+  });
 
-  renderPegs();
+  closeBtn.addEventListener("click", () => {
+    if (typeof window.renderLauncherButtons === "function") {
+      widgetBox.innerHTML = "";
+      window.renderLauncherButtons();
+    }
+  });
+
+  initGame();
 })();
-
