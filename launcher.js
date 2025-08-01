@@ -167,7 +167,12 @@
      {
   label: "🔊", // Guess the Sound
   src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/guess-the-sound-widget.js"
+},
+     {
+  label: "🧱", // Quick Maze
+  src: "https://raw.githubusercontent.com/vineettiwari1708/widget-launcher/main/quick-maze-widget.js"
 }
+
 
 ];
 
