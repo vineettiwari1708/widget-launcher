@@ -295,24 +295,14 @@
 
     const style = document.createElement("style");
     style.textContent = `
-     
-      @media (max-width: 600px) {
-    .widget-box {
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      bottom: 0 !important;
-      width: 100vw !important;
-      height: 100vh !important;
-      max-width: 100vw !important;
-      max-height: 100vh !important;
-      transform: none !important;
-      border-radius: 0 !important;
-      padding: 20px !important;
-      box-sizing: border-box;
-      z-index: 10000;
-    }
-  }
+       @media (max-width: 500px) {
+        .widget-box {
+          max-width: 90vw !important;
+          max-height: 90vh !important;
+          right: 60px !important;
+        }
+      }
+      
 `;
     `;
     document.head.appendChild(style);
